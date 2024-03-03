@@ -6,8 +6,8 @@ TEST(EquationTest, TestAllNumbers) {
 
   exercise_2(2, 5, 2);
 
-  std::string stdou_output = testing::internal::GetCapturedStdout();
-  ASSERT_EQ(stdou_output, "-0.5 -2\n");
+  std::string YOUR_OUTPUT = testing::internal::GetCapturedStdout();
+  ASSERT_EQ(YOUR_OUTPUT, "-0.5 -2\n");
 }
 
 TEST(EquationTest, TestAllNumbersOneRoot) {
@@ -15,8 +15,8 @@ TEST(EquationTest, TestAllNumbersOneRoot) {
 
   exercise_2(2, 4, 2);
 
-  std::string stdou_output = testing::internal::GetCapturedStdout();
-  ASSERT_EQ(stdou_output, "-1\n");
+  std::string YOUR_OUTPUT = testing::internal::GetCapturedStdout();
+  ASSERT_EQ(YOUR_OUTPUT, "-1\n");
 }
 
 TEST(EquationTest, TestAllNumbersNoRoot) {
@@ -24,8 +24,8 @@ TEST(EquationTest, TestAllNumbersNoRoot) {
 
   exercise_2(2, 1, 2);
 
-  std::string stdou_output = testing::internal::GetCapturedStdout();
-  ASSERT_EQ(stdou_output, "");
+  std::string YOUR_OUTPUT = testing::internal::GetCapturedStdout();
+  ASSERT_EQ(YOUR_OUTPUT, "");
 }
 
 TEST(EquationTest, TestAllNumbersOneNegRoot) {
@@ -33,8 +33,8 @@ TEST(EquationTest, TestAllNumbersOneNegRoot) {
 
   exercise_2(0, 4, 10);
 
-  std::string stdou_output = testing::internal::GetCapturedStdout();
-  ASSERT_EQ(stdou_output, "-2.5\n");
+  std::string YOUR_OUTPUT = testing::internal::GetCapturedStdout();
+  ASSERT_EQ(YOUR_OUTPUT, "-2.5\n");
 }
 
 TEST(EquationTest, HandlesLargeCoefficients) {
@@ -42,8 +42,8 @@ TEST(EquationTest, HandlesLargeCoefficients) {
 
   exercise_2(10000, -50000, 25000);
 
-  std::string stdou_output = testing::internal::GetCapturedStdout();
-  ASSERT_EQ(stdou_output, "4.43649 0.563508\n");
+  std::string YOUR_OUTPUT = testing::internal::GetCapturedStdout();
+  ASSERT_EQ(YOUR_OUTPUT, "4.43649 0.563508\n");
 }
 
 TEST(EquationTest, HandlesZeroCoefficients) {
@@ -51,8 +51,8 @@ TEST(EquationTest, HandlesZeroCoefficients) {
 
   exercise_2(0, 0, 4);
 
-  std::string stdou_output = testing::internal::GetCapturedStdout();
-  ASSERT_EQ(stdou_output, "");
+  std::string YOUR_OUTPUT = testing::internal::GetCapturedStdout();
+  ASSERT_EQ(YOUR_OUTPUT, "");
 }
 
 TEST(EquationTest, HandlesNegativeDiscriminant) {
@@ -60,8 +60,8 @@ TEST(EquationTest, HandlesNegativeDiscriminant) {
 
   exercise_2(2, 5, 6);
 
-  std::string stdou_output = testing::internal::GetCapturedStdout();
-  ASSERT_EQ(stdou_output, "");
+  std::string YOUR_OUTPUT = testing::internal::GetCapturedStdout();
+  ASSERT_EQ(YOUR_OUTPUT, "");
 }
 
 TEST(EquationTest, HandlesFloatingPointValues) {
@@ -69,8 +69,8 @@ TEST(EquationTest, HandlesFloatingPointValues) {
 
   exercise_2(1.5, -3.4, 2.1);
 
-  std::string stdou_output = testing::internal::GetCapturedStdout();
-  ASSERT_EQ(stdou_output, "");
+  std::string YOUR_OUTPUT = testing::internal::GetCapturedStdout();
+  ASSERT_EQ(YOUR_OUTPUT, "");
 }
 
 int main(int argc, char** argv) {

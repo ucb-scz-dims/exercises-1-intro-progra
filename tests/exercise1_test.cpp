@@ -6,8 +6,8 @@ TEST(Exercise1, TestStdOut) {
 
   exercise_1("milk", "milkshake", "month");
 
-  std::string stdou_output = testing::internal::GetCapturedStdout();
-  ASSERT_EQ(stdou_output, "milk");
+  std::string YOUR_OUTPUT = testing::internal::GetCapturedStdout();
+  ASSERT_EQ(YOUR_OUTPUT, "milk");
 }
 
 TEST(Exercise1, TestCharsStrings) {
@@ -15,8 +15,8 @@ TEST(Exercise1, TestCharsStrings) {
 
   exercise_1("c", "a", "b");
 
-  std::string stdou_output = testing::internal::GetCapturedStdout();
-  ASSERT_EQ(stdou_output, "a");
+  std::string YOUR_OUTPUT = testing::internal::GetCapturedStdout();
+  ASSERT_EQ(YOUR_OUTPUT, "a");
 }
 
 TEST(Exercise1, TestSimilarStrings) {
@@ -24,8 +24,8 @@ TEST(Exercise1, TestSimilarStrings) {
 
   exercise_1("fire", "fog", "wood");
 
-  std::string stdou_output = testing::internal::GetCapturedStdout();
-  ASSERT_EQ(stdou_output, "fire");
+  std::string YOUR_OUTPUT = testing::internal::GetCapturedStdout();
+  ASSERT_EQ(YOUR_OUTPUT, "fire");
 }
 
 TEST(Exercise1, HandlesEmptyStrings) {
@@ -33,8 +33,8 @@ TEST(Exercise1, HandlesEmptyStrings) {
 
   exercise_1("", "apple", "banana");
 
-  std::string actual_output = testing::internal::GetCapturedStdout();
-  EXPECT_EQ(actual_output, "");
+  std::string YOUR_OUTPUT = testing::internal::GetCapturedStdout();
+  EXPECT_EQ(YOUR_OUTPUT, "");
 }
 
 TEST(Exercise1, HandlesAllStringsEqual) {
@@ -42,8 +42,8 @@ TEST(Exercise1, HandlesAllStringsEqual) {
 
   exercise_1("orange", "orange", "orange");
 
-  std::string actual_output = testing::internal::GetCapturedStdout();
-  EXPECT_EQ(actual_output, "orange");
+  std::string YOUR_OUTPUT = testing::internal::GetCapturedStdout();
+  EXPECT_EQ(YOUR_OUTPUT, "orange");
 }
 
 TEST(Exercise1, HandlesSingleCharacterStrings) {
@@ -51,8 +51,8 @@ TEST(Exercise1, HandlesSingleCharacterStrings) {
 
   exercise_1("a", "b", "c");
 
-  std::string actual_output = testing::internal::GetCapturedStdout();
-  EXPECT_EQ(actual_output, "a");
+  std::string YOUR_OUTPUT = testing::internal::GetCapturedStdout();
+  EXPECT_EQ(YOUR_OUTPUT, "a");
 }
 
 TEST(Exercise1, HandlesSpecialCharacters) {
@@ -60,8 +60,8 @@ TEST(Exercise1, HandlesSpecialCharacters) {
 
   exercise_1("!", "@", "#");
 
-  std::string actual_output = testing::internal::GetCapturedStdout();
-  EXPECT_EQ(actual_output, "!");
+  std::string YOUR_OUTPUT = testing::internal::GetCapturedStdout();
+  EXPECT_EQ(YOUR_OUTPUT, "!");
 }
 
 int main(int argc, char** argv) {

@@ -6,13 +6,13 @@ TEST(RentaBicicleta, TestBicicleta) {
 
   exercise_16(10, 19);
 
-  std::string stdou_output = testing::internal::GetCapturedStdout();
+  std::string YOUR_OUTPUT = testing::internal::GetCapturedStdout();
   std::string expected =
       "Haz alquilado una bicicleta por\n\
 2 hora(s) con el tarifario de 1 boliviano(s)\n\
 7 hora(s) con el tarifario de 2 boliviano(s)\n\
 El monto total a pagar es de 16 boliviano(s).\n";
-  ASSERT_EQ(stdou_output, expected);
+  ASSERT_EQ(YOUR_OUTPUT, expected);
 }
 
 TEST(RentaBicicleta, TestBicicleta2) {
@@ -20,12 +20,12 @@ TEST(RentaBicicleta, TestBicicleta2) {
 
   exercise_16(18, 20);
 
-  std::string stdou_output = testing::internal::GetCapturedStdout();
+  std::string YOUR_OUTPUT = testing::internal::GetCapturedStdout();
   std::string expected =
       "Haz alquilado una bicicleta por\n\
 2 hora(s) con el tarifario de 1 boliviano(s)\n\
 El monto total a pagar es de 2 boliviano(s).\n";
-  ASSERT_EQ(stdou_output, expected);
+  ASSERT_EQ(YOUR_OUTPUT, expected);
 }
 
 TEST(RentaBicicleta, TestBicicleta3) {
@@ -33,10 +33,10 @@ TEST(RentaBicicleta, TestBicicleta3) {
 
   exercise_16(20, 10);
 
-  std::string stdou_output = testing::internal::GetCapturedStdout();
+  std::string YOUR_OUTPUT = testing::internal::GetCapturedStdout();
   std::string expected =
       "Que extraño, el inicio del alquiler es después del final...\n";
-  ASSERT_EQ(stdou_output, expected);
+  ASSERT_EQ(YOUR_OUTPUT, expected);
 }
 
 TEST(RentaBicicleta, TestBicicleta4) {
@@ -44,10 +44,10 @@ TEST(RentaBicicleta, TestBicicleta4) {
 
   exercise_16(10, 10);
 
-  std::string stdou_output = testing::internal::GetCapturedStdout();
+  std::string YOUR_OUTPUT = testing::internal::GetCapturedStdout();
   std::string expected =
       "Que extraño, no has alquilado tu bicicleta por mucho tiempo!\n";
-  ASSERT_EQ(stdou_output, expected);
+  ASSERT_EQ(YOUR_OUTPUT, expected);
 }
 
 TEST(RentaBicicleta, TestBicicleta5) {
@@ -55,10 +55,10 @@ TEST(RentaBicicleta, TestBicicleta5) {
 
   exercise_16(100, 10);
 
-  std::string stdou_output = testing::internal::GetCapturedStdout();
+  std::string YOUR_OUTPUT = testing::internal::GetCapturedStdout();
   std::string expected =
       "Las horas deben estar entre 0 y 24!\n";
-  ASSERT_EQ(stdou_output, expected);
+  ASSERT_EQ(YOUR_OUTPUT, expected);
 }
 
 TEST(RentaBicicleta, TestBicicleta6) {
@@ -66,10 +66,10 @@ TEST(RentaBicicleta, TestBicicleta6) {
 
   exercise_16(10, -100);
 
-  std::string stdou_output = testing::internal::GetCapturedStdout();
+  std::string YOUR_OUTPUT = testing::internal::GetCapturedStdout();
   std::string expected =
       "Las horas deben estar entre 0 y 24!\n";
-  ASSERT_EQ(stdou_output, expected);
+  ASSERT_EQ(YOUR_OUTPUT, expected);
 }
 
 TEST(RentaBicicleta, TestBicicleta7) {
@@ -77,10 +77,10 @@ TEST(RentaBicicleta, TestBicicleta7) {
 
   exercise_16(-10, -100);
 
-  std::string stdou_output = testing::internal::GetCapturedStdout();
+  std::string YOUR_OUTPUT = testing::internal::GetCapturedStdout();
   std::string expected =
       "Las horas deben estar entre 0 y 24!\n";
-  ASSERT_EQ(stdou_output, expected);
+  ASSERT_EQ(YOUR_OUTPUT, expected);
 }
 
 TEST(RentaBicicleta, TestBicicleta8) {
@@ -88,12 +88,12 @@ TEST(RentaBicicleta, TestBicicleta8) {
 
   exercise_16(7, 17);
 
-  std::string stdou_output = testing::internal::GetCapturedStdout();
+  std::string YOUR_OUTPUT = testing::internal::GetCapturedStdout();
   std::string expected =
       "Haz alquilado una bicicleta por\n\
 10 hora(s) con el tarifario de 2 boliviano(s)\n\
 El monto total a pagar es de 20 boliviano(s).\n";
-  ASSERT_EQ(stdou_output, expected);
+  ASSERT_EQ(YOUR_OUTPUT, expected);
 }
 
 TEST(RentaBicicleta, TestBicicleta9) {
@@ -101,13 +101,13 @@ TEST(RentaBicicleta, TestBicicleta9) {
 
   exercise_16(0, 24);
 
-  std::string stdou_output = testing::internal::GetCapturedStdout();
+  std::string YOUR_OUTPUT = testing::internal::GetCapturedStdout();
   std::string expected =
       "Haz alquilado una bicicleta por\n\
 14 hora(s) con el tarifario de 1 boliviano(s)\n\
 10 hora(s) con el tarifario de 2 boliviano(s)\n\
 El monto total a pagar es de 34 boliviano(s).\n";
-  ASSERT_EQ(stdou_output, expected);
+  ASSERT_EQ(YOUR_OUTPUT, expected);
 }
 
 TEST(RentaBicicleta, TestBicicleta10) {
@@ -115,12 +115,12 @@ TEST(RentaBicicleta, TestBicicleta10) {
 
   exercise_16(0, 1);
 
-  std::string stdou_output = testing::internal::GetCapturedStdout();
+  std::string YOUR_OUTPUT = testing::internal::GetCapturedStdout();
   std::string expected =
       "Haz alquilado una bicicleta por\n\
 1 hora(s) con el tarifario de 1 boliviano(s)\n\
 El monto total a pagar es de 1 boliviano(s).\n";
-  ASSERT_EQ(stdou_output, expected);
+  ASSERT_EQ(YOUR_OUTPUT, expected);
 }
 
 int main(int argc, char** argv) {

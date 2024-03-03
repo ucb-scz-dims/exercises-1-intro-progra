@@ -6,8 +6,8 @@ TEST(TimeElapse, TestTimeElapse) {
 
   exercise_8(3870);
 
-  std::string stdou_output = testing::internal::GetCapturedStdout();
-  ASSERT_EQ(stdou_output, "01:04:30\n");
+  std::string YOUR_OUTPUT = testing::internal::GetCapturedStdout();
+  ASSERT_EQ(YOUR_OUTPUT, "01:04:30\n");
 }
 
 TEST(TimeElapse, TestTimeElapseSec) {
@@ -15,8 +15,8 @@ TEST(TimeElapse, TestTimeElapseSec) {
 
   exercise_8(60);
 
-  std::string stdou_output = testing::internal::GetCapturedStdout();
-  ASSERT_EQ(stdou_output, "00:01:00\n");
+  std::string YOUR_OUTPUT = testing::internal::GetCapturedStdout();
+  ASSERT_EQ(YOUR_OUTPUT, "00:01:00\n");
 }
 
 TEST(TimeElapse, HandlesComplexTime) {
@@ -24,8 +24,8 @@ TEST(TimeElapse, HandlesComplexTime) {
 
   exercise_8(7200 + 360 + 10);  // 2 hours, 12 minutes, 10 seconds
 
-  std::string stdou_output = testing::internal::GetCapturedStdout();
-  ASSERT_EQ(stdou_output, "02:06:10\n");
+  std::string YOUR_OUTPUT = testing::internal::GetCapturedStdout();
+  ASSERT_EQ(YOUR_OUTPUT, "02:06:10\n");
 }
 
 TEST(TimeElapse, HandlesZeroSeconds) {
@@ -33,17 +33,17 @@ TEST(TimeElapse, HandlesZeroSeconds) {
 
   exercise_8(0);
 
-  std::string stdou_output = testing::internal::GetCapturedStdout();
-  ASSERT_EQ(stdou_output, "00:00:00\n");
+  std::string YOUR_OUTPUT = testing::internal::GetCapturedStdout();
+  ASSERT_EQ(YOUR_OUTPUT, "00:00:00\n");
 }
 
 TEST(TimeElapse, HandlesNegativeInput) {
   testing::internal::CaptureStdout();
 
   exercise_8(-60);
-  std::string stdou_output = testing::internal::GetCapturedStdout();
+  std::string YOUR_OUTPUT = testing::internal::GetCapturedStdout();
 
-  EXPECT_EQ(stdou_output, "Error: Input seconds cannot be negative.\n");
+  EXPECT_EQ(YOUR_OUTPUT, "Error: Input seconds cannot be negative.\n");
 }
 
 int main(int argc, char** argv) {

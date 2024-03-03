@@ -6,12 +6,12 @@ TEST(Permutation, TestPermutation) {
 
   exercise_15(51, 876, 235);
 
-  std::string stdou_output = testing::internal::GetCapturedStdout();
+  std::string YOUR_OUTPUT = testing::internal::GetCapturedStdout();
   std::string expected =
       "Los valores son: a = 51 b = 876 y c = 235\n\
 Permutamos: a => b, b => c, c => a\n\
 Los valores despues de la permutacion son: a = 235 b = 51 c = 876\n";
-  ASSERT_EQ(stdou_output, expected);
+  ASSERT_EQ(YOUR_OUTPUT, expected);
 }
 
 int main(int argc, char** argv) {

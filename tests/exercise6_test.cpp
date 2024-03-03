@@ -6,8 +6,8 @@ TEST(DaysTest, TestCorrectDay) {
 
   exercise_6(1);
 
-  std::string stdou_output = testing::internal::GetCapturedStdout();
-  ASSERT_EQ(stdou_output, "Monday\n");
+  std::string YOUR_OUTPUT = testing::internal::GetCapturedStdout();
+  ASSERT_EQ(YOUR_OUTPUT, "Monday\n");
 }
 
 TEST(DaysTest, TestCorrectDay4) {
@@ -15,8 +15,8 @@ TEST(DaysTest, TestCorrectDay4) {
 
   exercise_6(4);
 
-  std::string stdou_output = testing::internal::GetCapturedStdout();
-  ASSERT_EQ(stdou_output, "Thursday\n");
+  std::string YOUR_OUTPUT = testing::internal::GetCapturedStdout();
+  ASSERT_EQ(YOUR_OUTPUT, "Thursday\n");
 }
 
 TEST(DaysTest, TestInCorrectDay) {
@@ -24,8 +24,8 @@ TEST(DaysTest, TestInCorrectDay) {
 
   exercise_6(-1);
 
-  std::string stdou_output = testing::internal::GetCapturedStdout();
-  ASSERT_EQ(stdou_output, "Invalid input\n");
+  std::string YOUR_OUTPUT = testing::internal::GetCapturedStdout();
+  ASSERT_EQ(YOUR_OUTPUT, "Invalid input\n");
 }
 
 TEST(DaysTest, TestInCorrectDay2) {
@@ -33,8 +33,8 @@ TEST(DaysTest, TestInCorrectDay2) {
 
   exercise_6(1000);
 
-  std::string stdou_output = testing::internal::GetCapturedStdout();
-  ASSERT_EQ(stdou_output, "Invalid input\n");
+  std::string YOUR_OUTPUT = testing::internal::GetCapturedStdout();
+  ASSERT_EQ(YOUR_OUTPUT, "Invalid input\n");
 }
 
 int main(int argc, char** argv) {

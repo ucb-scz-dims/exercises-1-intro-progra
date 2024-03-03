@@ -6,8 +6,8 @@ TEST(DivTest, TestDiv) {
 
   exercise_3(10, 2);
 
-  std::string stdou_output = testing::internal::GetCapturedStdout();
-  ASSERT_EQ(stdou_output, "5\n");
+  std::string YOUR_OUTPUT = testing::internal::GetCapturedStdout();
+  ASSERT_EQ(YOUR_OUTPUT, "5\n");
 }
 
 TEST(DivTest, TestDiv2) {
@@ -15,8 +15,8 @@ TEST(DivTest, TestDiv2) {
 
   exercise_3(3, 5);
 
-  std::string stdou_output = testing::internal::GetCapturedStdout();
-  ASSERT_EQ(stdou_output, "0\n");
+  std::string YOUR_OUTPUT = testing::internal::GetCapturedStdout();
+  ASSERT_EQ(YOUR_OUTPUT, "0\n");
 }
 
 TEST(DivTest, TestDivZero) {
@@ -24,8 +24,8 @@ TEST(DivTest, TestDivZero) {
 
   exercise_3(11, 0);
 
-  std::string stdou_output = testing::internal::GetCapturedStdout();
-  ASSERT_EQ(stdou_output, "Impossible\n");
+  std::string YOUR_OUTPUT = testing::internal::GetCapturedStdout();
+  ASSERT_EQ(YOUR_OUTPUT, "Impossible\n");
 }
 
 int main(int argc, char** argv) {

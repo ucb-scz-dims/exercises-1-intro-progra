@@ -6,8 +6,8 @@ TEST(CostProduct, TestCosts) {
 
   exercise_4(100, 110, 120, 5, 10);
 
-  std::string stdou_output = testing::internal::GetCapturedStdout();
-  ASSERT_EQ(stdou_output, "100\n");
+  std::string YOUR_OUTPUT = testing::internal::GetCapturedStdout();
+  ASSERT_EQ(YOUR_OUTPUT, "100\n");
 }
 
 TEST(DivTest, TestCosts2) {
@@ -15,8 +15,8 @@ TEST(DivTest, TestCosts2) {
 
   exercise_4(115, 110, 120, 5, 10);
 
-  std::string stdou_output = testing::internal::GetCapturedStdout();
-  ASSERT_EQ(stdou_output, "109.25\n");
+  std::string YOUR_OUTPUT = testing::internal::GetCapturedStdout();
+  ASSERT_EQ(YOUR_OUTPUT, "109.25\n");
 }
 
 TEST(DivTest, TestCostsDouble) {
@@ -24,8 +24,8 @@ TEST(DivTest, TestCostsDouble) {
 
   exercise_4(150, 110, 120, 5, 12.5);
 
-  std::string stdou_output = testing::internal::GetCapturedStdout();
-  ASSERT_EQ(stdou_output, "131.25\n");
+  std::string YOUR_OUTPUT = testing::internal::GetCapturedStdout();
+  ASSERT_EQ(YOUR_OUTPUT, "131.25\n");
 }
 
 int main(int argc, char** argv) {

@@ -6,8 +6,8 @@ TEST(HousesOut, TestHouses) {
 
   exercise_12("red", 3, "green", 3, "green", 2, "green", -1);
 
-  std::string stdou_output = testing::internal::GetCapturedStdout();
-  ASSERT_EQ(stdou_output, "2\n3\n");
+  std::string YOUR_OUTPUT = testing::internal::GetCapturedStdout();
+  ASSERT_EQ(YOUR_OUTPUT, "2\n3\n");
 }
 
 TEST(HousesOut, TestHouses2) {
@@ -15,8 +15,8 @@ TEST(HousesOut, TestHouses2) {
 
   exercise_12("red", 2, "green", 1, "red", 3, "red", 3);
 
-  std::string stdou_output = testing::internal::GetCapturedStdout();
-  ASSERT_EQ(stdou_output, "3\n");
+  std::string YOUR_OUTPUT = testing::internal::GetCapturedStdout();
+  ASSERT_EQ(YOUR_OUTPUT, "3\n");
 }
 
 TEST(HousesOut, TestHouses3) {
@@ -24,8 +24,8 @@ TEST(HousesOut, TestHouses3) {
 
   exercise_12("red", 1, "green", 2, "blue", 3, "yellow", 3);
 
-  std::string stdou_output = testing::internal::GetCapturedStdout();
-  ASSERT_EQ(stdou_output, "");
+  std::string YOUR_OUTPUT = testing::internal::GetCapturedStdout();
+  ASSERT_EQ(YOUR_OUTPUT, "");
 }
 
 TEST(HousesOut, TestHouses4) {
@@ -33,8 +33,8 @@ TEST(HousesOut, TestHouses4) {
 
   exercise_12("grey", 5, "grey", 5, "grey", 5, "grey", 5);
 
-  std::string stdou_output = testing::internal::GetCapturedStdout();
-  ASSERT_EQ(stdou_output, "1\n2\n3\n");
+  std::string YOUR_OUTPUT = testing::internal::GetCapturedStdout();
+  ASSERT_EQ(YOUR_OUTPUT, "1\n2\n3\n");
 }
 
 int main(int argc, char** argv) {

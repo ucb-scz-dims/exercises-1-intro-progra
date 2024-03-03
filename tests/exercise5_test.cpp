@@ -6,8 +6,8 @@ TEST(CharTest, TestUpperChars) {
 
   exercise_5('C');
 
-  std::string stdou_output = testing::internal::GetCapturedStdout();
-  ASSERT_EQ(stdou_output, "upper-case alphabet\n");
+  std::string YOUR_OUTPUT = testing::internal::GetCapturedStdout();
+  ASSERT_EQ(YOUR_OUTPUT, "upper-case alphabet\n");
 }
 
 TEST(CharTest, TestLowerChars) {
@@ -15,8 +15,8 @@ TEST(CharTest, TestLowerChars) {
 
   exercise_5('z');
 
-  std::string stdou_output = testing::internal::GetCapturedStdout();
-  ASSERT_EQ(stdou_output, "lower-case alphabet\n");
+  std::string YOUR_OUTPUT = testing::internal::GetCapturedStdout();
+  ASSERT_EQ(YOUR_OUTPUT, "lower-case alphabet\n");
 }
 
 TEST(CharTest, TestIncorrectChars) {
@@ -24,8 +24,8 @@ TEST(CharTest, TestIncorrectChars) {
 
   exercise_5(' ');
 
-  std::string stdou_output = testing::internal::GetCapturedStdout();
-  ASSERT_EQ(stdou_output, "not an alphabet\n");
+  std::string YOUR_OUTPUT = testing::internal::GetCapturedStdout();
+  ASSERT_EQ(YOUR_OUTPUT, "not an alphabet\n");
 }
 
 int main(int argc, char** argv) {

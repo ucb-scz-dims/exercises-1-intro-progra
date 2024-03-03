@@ -6,8 +6,8 @@ TEST(StringsTests, TestStringsNoEqual) {
   const auto expected = "Aun sin suerte";
   const auto actual = exercise_9("apple", "banana", "cat", "dog", "eleven");
 
-  std::string stdou_output = testing::internal::GetCapturedStdout();
-  ASSERT_EQ(stdou_output, "abcde\n");
+  std::string YOUR_OUTPUT = testing::internal::GetCapturedStdout();
+  ASSERT_EQ(YOUR_OUTPUT, "abcde\n");
   ASSERT_EQ(actual, expected);
 }
 
@@ -16,8 +16,8 @@ TEST(StringsTests, TestStringsNoEqual2) {
   const auto expected = "Aun sin suerte";
   const auto actual = exercise_9("a", "s", "d", "f", "g");
 
-  std::string stdou_output = testing::internal::GetCapturedStdout();
-  ASSERT_EQ(stdou_output, "asdfg\n");
+  std::string YOUR_OUTPUT = testing::internal::GetCapturedStdout();
+  ASSERT_EQ(YOUR_OUTPUT, "asdfg\n");
   ASSERT_EQ(actual, expected);
 }
 
@@ -26,8 +26,8 @@ TEST(StringsTests, TestStringsEqual) {
   const auto expected = "Hemos encontrado algo!";
   const auto actual = exercise_9("1", "two", "3", "four", "1");
 
-  std::string stdou_output = testing::internal::GetCapturedStdout();
-  ASSERT_EQ(stdou_output, "1t3f1\n");
+  std::string YOUR_OUTPUT = testing::internal::GetCapturedStdout();
+  ASSERT_EQ(YOUR_OUTPUT, "1t3f1\n");
   ASSERT_EQ(actual, expected);
 }
 
