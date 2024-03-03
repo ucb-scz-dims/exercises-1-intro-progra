@@ -1,0 +1,51 @@
+name: intro-progra
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: CMake Config
+        run: cmake -S . -B build
+      - name: make
+        run: cd build && make
+      - name: Exercise 1
+        run: cd build/tests && ./exercise1_test
+      - name: Exercise 2
+        run: cd build/tests && ./exercise2_test
+      - name: Exercise 3
+        run: cd build/tests && ./exercise3_test
+      - name: Exercise 4
+        run: cd build/tests && ./exercise4_test
+      - name: Exercise 5
+        run: cd build/tests && ./exercise5_test
+      - name: Exercise 6
+        run: cd build/tests && ./exercise6_test
+      - name: Exercise 7
+        run: cd build/tests && ./exercise7_test
+      - name: Exercise 8
+        run: cd build/tests && ./exercise8_test
+      - name: Exercise 9
+        run: cd build/tests && ./exercise9_test
+      - name: Exercise 10
+        run: cd build/tests && ./exercise10_test
+      - name: Exercise 11
+        run: cd build/tests && ./exercise11_test
+      - name: Exercise 12
+        run: cd build/tests && ./exercise12_test
+      - name: Exercise 13
+        run: cd build/tests && ./exercise13_test
+      - name: Exercise 14
+        run: cd build/tests && ./exercise14_test
+      - name: Exercise 15
+        run: cd build/tests && ./exercise15_test
+      - name: Exercise 16
+        run: cd build/tests && ./exercise16_test
+      - name: Run Tests
+        run: cd build && make test
