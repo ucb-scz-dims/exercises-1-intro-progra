@@ -16,10 +16,12 @@ jobs:
       - name: make
         run: cd build && make
       - name: Run Tests
-        run: cd build && ctest --output-on-failure
+        run: cd build && make test # ctest --output-on-failure
       - name: Exercise 1
+        if: always()
         run: cd build/tests && ./exercise1_test
       - name: Exercise 2
+        if: always()
         run: cd build/tests && ./exercise2_test
       - name: Exercise 3
         run: cd build/tests && ./exercise3_test
