@@ -87,7 +87,7 @@ __Ejemplo__
 |----------------------------|---------|
 | 2           | Martes     |
 | 4           | Jueves  |
-| 0         | Entrada Invalida  |
+| 0         | Invalid input  |
 ### Ejercicio 7
 Calcule el area de una esfera, dado su radio. Si el radio es negativo se debe levantar un mensaje de error: `Error: Radius cannot be negative.`
 
