@@ -15,6 +15,8 @@ jobs:
         run: cmake -S . -B build
       - name: make
         run: cd build && make
+      - name: Run Tests
+        run: cd build && make test
       - name: Exercise 1
         run: cd build/tests && ./exercise1_test
       - name: Exercise 2
@@ -47,5 +49,3 @@ jobs:
         run: cd build/tests && ./exercise15_test
       - name: Exercise 16
         run: cd build/tests && ./exercise16_test
-      - name: Run Tests
-        run: cd build && make test
