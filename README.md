@@ -17,6 +17,10 @@ Importante: El repositorio de ejercicio debe de ser publico y compartido con el 
 
 Se valorara tambien la cantidad de commits que haya realizado durante la resolucion de los ejercicios. Esto es importante, porque hacerlo en un solo commit es irrealista. Trate de que para cada ejercicio realizar el commit correspondiente. O cada dos ejercicios.
 
+Debe asegurarse que los mensajes de consola sean __estrictamente__ identicos a los que se muestran en este documento. Caso contrario, no pasaran las pruebas.
+
+Puede realizar sus pruebas locales en el archivo `main.cpp` utilizando el compilador `g++` el cual generara el ejecutable correspondiente.
+
 ---
 ### Ejercicio 1
 En el flujo estándar se dan tres strings separadas por espacios. Cada string consta de letras minúsculas del alfabeto latino y tiene una longitud de no más de 30 caracteres. Imprime en la salida estándar la línea que sea mínima en orden lexicográfico.
