@@ -137,7 +137,7 @@ __Ejemplos__
 Julia perdió a su cachorro Fibo, que recibió su nombre en honor al matemático Fibonacci. El signo especial de Fibo es que tiene grabado en su collar el código `11235813`. Escriba un programa que use el código del collar para determinar si pertenece a Fibo.
 
 __Formato de entrada y salida__
-El flujo de entrada estándar, `cin` , recibe un numero entero, el código del collar del perro. Si se trata de un collar de Fibonacci, el programa debe mostrar la línea: `"Se encontró Fibonacci".` Si este no es un collar de Fibonacci, el programa debe mostrar - `"Esto no es de Fibonacci"`. 
+El flujo de entrada estándar, `cin` , recibe un numero entero, el código del collar del perro. Si se trata de un collar de Fibonacci, el programa debe mostrar la línea: `"Se encontro Fibonacci".` Si este no es un collar de Fibonacci, el programa debe mostrar - `"Esto no es de Fibonacci"`. 
 
 __Ejemplos__
 - __Entrada__: 3
@@ -147,7 +147,7 @@ __Ejemplos__
 - __Salida__: Esto no es de Fibonacci
 
 - __Entrada__: 11235813
-- __Salida__: Se encontró Fibonacci
+- __Salida__: Se encontro Fibonacci
 
 - __Entrada__: 11235814
 - __Salida__: Esto no es de Fibonacci
@@ -225,14 +225,14 @@ __Salida__
 
 ### Ejercicio 14
 En anteriores ejercicios, se escribió un código de programa que: lee un número — el número de documentos; muestra cuántos documentos encontrados: `<número de documentos> documentos encontrados.`
-El programa funciona, pero la palabra "documento" siempre está en plural, por ejemplo, se encontraron `1 documentos`. Edite el código. Si la entrada es 0, deje que el programa genere `No se encontraron documentos`, si es 1: `Se encontró un documento`. En todos los demás casos, el programa debe generar `<número de documentos> documentos encontrados.`
+El programa funciona, pero la palabra "documento" siempre está en plural, por ejemplo, se encontraron `1 documentos`. Edite el código. Si la entrada es 0, deje que el programa genere `No se encontraron documentos`, si es 1: `Se encontro un documento`. En todos los demás casos, el programa debe generar `<número de documentos> documentos encontrados.`
 
 __Ejemplos__
 - __Entrada__: 0
 - __Salida__ No se encontraron documentos
 
 - __Entrada__: 1
-- __Salida__ Se encontró un documento
+- __Salida__ Se encontro un documento
 
 - __Entrada__: 2
 - __Salida__ 2 documentos encontrados.
