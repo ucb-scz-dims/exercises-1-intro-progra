@@ -16,8 +16,8 @@ void exercise_2(double A, double B, double C) {
   }
   else
   {
-  cout<<(-B+(B*B-4*A*C)*0.5)/2*A<<endl;
-  cout<<(-B-(B*B-4*A*C)*0.5)/2*A<<endl;
+  cout<<(-B+((B*B)-4*A*C)^0.5)/2*A<<endl;
+  cout<<(-B-((B*B)-4*A*C)^0.5)/2*A<<endl;
   }
 }
 
