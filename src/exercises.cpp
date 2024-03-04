@@ -6,7 +6,6 @@ using namespace std;
 
 void exercise_1(string s1, string s2, string s3) {
   // TODO: YOUR CODE HERE
-  cout<<"Jello wordl";
 }
 
 void exercise_2(double A, double B, double C) {
@@ -15,6 +14,16 @@ void exercise_2(double A, double B, double C) {
 
 void exercise_3(int a, int b) {
   // TODO: YOUR CODE HERE
+
+ if (b==0)
+{
+ cout<<"Imposible";
+}
+else
+{
+  cout<<a/b;
+}
+return 0;
 }
 
 void exercise_4(double n, double a, double b, double x, double y) {
