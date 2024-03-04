@@ -10,6 +10,8 @@ void exercise_1(string s1, string s2, string s3) {
 
 void exercise_2(double A, double B, double C) {
   // TODO: YOUR CODE HERE
+  cout<<(-B+(B*B-4*A*C)*0.5)/2*A<<endl;
+  cout<<(-B-(B*B-4*A*C)*0.5)/2*A<<endl;
 }
 
 void exercise_3(int a, int b) {
