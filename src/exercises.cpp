@@ -23,7 +23,6 @@ else
 {
   cout<<a/b;
 }
-return 0;
 }
 
 void exercise_4(double n, double a, double b, double x, double y) {
