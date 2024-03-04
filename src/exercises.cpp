@@ -17,11 +17,11 @@ void exercise_3(int a, int b) {
 
  if (b==0)
 {
- cout<<"Imposible";
+ cout<<"Impossible" << endl;
 }
 else
 {
-  cout<<a/b;
+  cout<<a/b<<endl;
 }
 }
 
