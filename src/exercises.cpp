@@ -10,7 +10,7 @@ void exercise_1(string s1, string s2, string s3) {
   {
   cout<<s1<<endl;
   }
- if (s2<s1 && s2<s3)
+ else if (s2<s1 && s2<s3)
  {
   cout<<s2<<endl;
   }
@@ -50,9 +50,9 @@ void exercise_4(double n, double a, double b, double x, double y) {
 if(n>b)
   {
     cout<<n-1*(n*(y/100))<<endl;
-    cout<<n-1*(n*(y/100))<<endl;
+    cout<<n-1*(n*(x/100))<<endl;
   }
-if (n>a)
+else if (n>a)
   {
     cout<<n-1*(n*(x/100))<<endl;
   }
