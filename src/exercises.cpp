@@ -16,7 +16,7 @@ void exercise_2(double A, double B, double C) {
   }
   else
   {
-cout<<((-1*B)+((B*B)*sqrt(-4*A*C)))/2*A<<" "<<B-((B*B)*sqrt(-4*A*C)))/2*A<<endl;
+cout<<((-1*B)+((B*B)*sqrt(-4*A*C)))/2*A<<" "<<(B-((B*B)*sqrt(-4*A*C)))/2*A<<endl;
   }
 }
 
