@@ -6,18 +6,17 @@ using namespace std;
 
 void exercise_1(string s1, string s2, string s3) {
   // TODO: YOUR CODE HERE
-}
+  }
 
 void exercise_2(double A, double B, double C) {
   // TODO: YOUR CODE HERE
     if (A==0)
   {
-    cout<< -C/B <<endl;
+  cout<< (-1*(C))/B <<endl;
   }
   else
   {
-  cout<<(-B+((B*B)*sqrt(-4*A*C)))/2*A<<endl;
-  cout<<(-B-((B*B)*sqrt(-4*A*C)))/2*A<<endl;
+cout<<((-1*B)+((B*B)*sqrt(-4*A*C)))/2*A<<" "<<B-((B*B)*sqrt(-4*A*C)))/2*A<<endl;
   }
 }
 
@@ -40,7 +39,7 @@ if(n>b)
   {
     cout<<n-(n*(y/100))<<endl;
   }
-if (n>a)
+else-if (n>a)
   {
     cout<<n-(n*(x/100))<<endl;
   }
