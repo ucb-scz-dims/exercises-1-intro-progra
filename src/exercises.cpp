@@ -16,8 +16,8 @@ void exercise_2(double A, double B, double C) {
   }
   else
   {
-  cout<<(-B+((B*B)sqrt(-4*A*C)))/2*A<<endl;
-  cout<<(-B-((B*B)sqrt(-4*A*C)))/2*A<<endl;
+  cout<<(-B+((B*B)*sqrt(-4*A*C)))/2*A<<endl;
+  cout<<(-B-((B*B)*sqrt(-4*A*C)))/2*A<<endl;
   }
 }
 
@@ -36,6 +36,18 @@ else
 
 void exercise_4(double n, double a, double b, double x, double y) {
   // TODO: YOUR CODE HERE
+if(n>b)
+  {
+    cout<<n-(n*(y/100))<<endl;
+  }
+if (n>a)
+  {
+    cout<<n-(n*(x/100))<<endl;
+  }
+else
+  {
+    cout<<n<<endl;
+  }
 }
 
 void exercise_5(char character) {
