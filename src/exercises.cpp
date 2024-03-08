@@ -52,7 +52,6 @@ void exercise_4(double n, double a, double b, double x, double y) {
 if(n>b)
   {
     cout<<n-1*(n*(y/100))<<endl;
-    cout<<n-1*(n*(x/100))<<endl;
   }
 else if (n>a)
   {
