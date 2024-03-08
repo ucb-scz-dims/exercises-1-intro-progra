@@ -8,20 +8,22 @@ void exercise_1(string s1, string s2, string s3) {
   // TODO: YOUR CODE HERE
    if (s1< s2 && s1 <s3)
   {
-  cout<<s1<<endl;
+  cout<<s1;
   }
  else if (s2<s1 && s2<s3)
  {
-  cout<<s2<<endl;
+  cout<<s2;
   }
+
   else
   {    
-     cout<<s3<<endl;
+     cout<<s3;
   }
 }
 
 void exercise_2(double A, double B, double C) {
   // TODO: YOUR CODE HERE
+
     if (A==0)
   {
   cout<< (-1*(C))/B <<endl;
