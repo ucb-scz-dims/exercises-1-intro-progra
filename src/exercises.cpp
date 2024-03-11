@@ -23,15 +23,26 @@ void exercise_1(string s1, string s2, string s3) {
 
 void exercise_2(double A, double B, double C) {
   // TODO: YOUR CODE HERE
-
-    if (A==0)
-  {
-  cout<< (-1*(C))/B <<endl;
-  }
-  else
-  {
-cout<<((-1*B)+((B*B)*sqrt(-4*A*C)))/2*A<<" "<<(B-((B*B)*sqrt(-4*A*C)))/2*A<<endl;
-  }
+    double D = B * B - 4 * A * C;
+    if (D >= 0 && A |= 0 ) {
+        double d_sqrt = sqrt (D);
+        double x1 = (-B + d_sqrt) / (2*A);
+        double x2 = (-B - d_sqrt) / (2*A);
+        cout<<x1<<endl;
+        cout<<x2<<endl;
+    }
+    else if(A==0 && B|=0)
+    {
+        cout<< (-1*(C))/B <<endl;
+    }
+    else if (B==0)
+    {
+      cout<< sqrt (C/A) <<endl;
+    }
+    else 
+    {
+        cout<<" "<<endl;
+    }
 }
 
 void exercise_3(int a, int b) {
@@ -69,10 +80,36 @@ void exercise_5(char character) {
 
 void exercise_6(int number) {
   // TODO: YOUR CODE HERE
+  switch (number)
+  {
+    case 1: cout<<"Monday";
+    break;
+    case 2: cout<<"Tuesday";
+    break;
+    case 3: cout<<"Wednesday";
+    break;
+    case 4: cout<<"Thursday";
+    break;
+    case 5: cout<<"Friday";
+    break;
+    case 6: cout<<"Saturday";
+    break;
+    case 7: cout<<"Sunday";
+    break;
+    default: cout<<"Invalid input";
+  }
 }
 
 void exercise_7(double r) {
   // TODO: YOUR CODE HERE
+  if (r>=0)
+  {
+    cout<< 4*3.14*r*r<<endl;
+  }
+  else 
+  {
+    cout << "Error: Radius cannot be negative."<<endl;
+  }
 }
 
 void exercise_8(long int seconds) {
