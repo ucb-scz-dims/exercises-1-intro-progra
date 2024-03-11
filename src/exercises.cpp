@@ -34,19 +34,20 @@ void exercise_2(double A, double B, double C) {
     else if (D=0 && A != 0)
     {
     double d_sqrt = sqrt (D);
-    double x1 = (-B + d_sqrt) / (2*A);   
+    double x1 = (-B + d_sqrt) / (2*A);  
+    cout<<x1<<endl; 
     }
     else if(A==0 && B!=0)
     {
         cout<< (-1*(C))/B <<endl;
     }
-    else if (B==0)
+    else if (A!=0 && B==0 )
     {
       cout<< sqrt (C/A) <<endl;
     }
     else 
     {
-        cout<<"";
+        cout<<" ";
     }
 }
 
