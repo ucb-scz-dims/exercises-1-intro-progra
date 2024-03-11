@@ -24,12 +24,17 @@ void exercise_1(string s1, string s2, string s3) {
 void exercise_2(double A, double B, double C) {
   // TODO: YOUR CODE HERE
     double D = B * B - 4 * A * C;
-    if (D >= 0 && A != 0 ) 
+    if (D > 0 && A != 0 ) 
     {
         double d_sqrt = sqrt (D);
         double x1 = (-B + d_sqrt) / (2*A);
         double x2 = (-B - d_sqrt) / (2*A);
-        cout<<x1<<x2<<endl;
+        cout<<x1<<" "<<x2<<endl;
+    }
+    else if (D=0 && A != 0)
+    {
+    double d_sqrt = sqrt (D);
+    double x1 = (-B + d_sqrt) / (2*A);   
     }
     else if(A==0 && B!=0)
     {
@@ -41,7 +46,7 @@ void exercise_2(double A, double B, double C) {
     }
     else 
     {
-        cout<<""<<endl;
+        cout<<"";
     }
 }
 
@@ -82,21 +87,21 @@ void exercise_6(int number) {
   // TODO: YOUR CODE HERE
   switch (number)
   {
-    case 1: cout<<"Monday";
+    case 1: cout<<"Monday"<<endl;
     break;
-    case 2: cout<<"Tuesday";
+    case 2: cout<<"Tuesday"<<endl;
     break;
-    case 3: cout<<"Wednesday";
+    case 3: cout<<"Wednesday"<<endl;
     break;
-    case 4: cout<<"Thursday";
+    case 4: cout<<"Thursday"<<endl;
     break;
-    case 5: cout<<"Friday";
+    case 5: cout<<"Friday"<<endl;
     break;
-    case 6: cout<<"Saturday";
+    case 6: cout<<"Saturday"<<endl;
     break;
-    case 7: cout<<"Sunday";
+    case 7: cout<<"Sunday"<<endl;
     break;
-    default: cout<<"Invalid input";
+    default: cout<<"Invalid input"<<endl;
   }
 }
 
