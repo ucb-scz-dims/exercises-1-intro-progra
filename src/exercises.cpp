@@ -143,7 +143,7 @@ string exercise_11(int number) {
       cout<<"Esto no es de Fibonacci";
     } 
 
-  return "";
+    //return "";
   }
 
 void exercise_12(string color1, int numb1,
