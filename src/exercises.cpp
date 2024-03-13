@@ -82,6 +82,18 @@ else
 
 void exercise_5(char character) {
   // TODO: YOUR CODE HERE
+  if (character>='a' && character<='z')
+  {
+    cout<<"upper-case alphabet"<<endl;
+  }
+  else if (character>='A' && character<='Z')
+  {
+    cout<<"lower-case alphabet"<<endl;
+  }
+  else
+  {
+    cout<<"not an alphabet"<<endl;
+  }
 }
 
 void exercise_6(int number) {
