@@ -84,11 +84,11 @@ void exercise_5(char character) {
   // TODO: YOUR CODE HERE
   if (character>='a' && character<='z')
   {
-    cout<<"upper-case alphabet"<<endl;
+    cout<<"lower-case alphabet"<<endl;
   }
   else if (character>='A' && character<='Z')
   {
-    cout<<"lower-case alphabet"<<endl;
+    cout<<"upper-case alphabet"<<endl;
   }
   else
   {
@@ -148,11 +148,11 @@ string exercise_11(int number) {
     cin>> number;
     if (number==11235813)
     {
-      cout<<"\"Se encontro Fibonacci\"";
+      cout<<"Se encontro Fibonacci";
     }
     else
     { 
-      cout<<"\"Esto no es de Fibonacci\"";
+      cout<<"Esto no es de Fibonacci";
     } 
 
     return "";
