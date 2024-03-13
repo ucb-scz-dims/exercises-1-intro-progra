@@ -190,6 +190,18 @@ string exercise_13(int age, int years_of_experience) {
 
 string exercise_14(int number_of_docs) {
   // TODO: YOUR CODE HERE
+  if(number_of_docs>=2)
+  {
+    cout<<number_of_docs<<" documentos encontrados.";
+  }
+  else if (number_of_docs==1)
+  {
+    cout<<"Se encontro un documento";
+  }
+  else
+  {
+    cout<<"No se encontraron documentos";
+  }
   return "";
 }
 
