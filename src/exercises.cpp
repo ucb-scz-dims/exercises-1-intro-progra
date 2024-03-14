@@ -55,26 +55,26 @@ void exercise_3(int a, int b) {
   // TODO: YOUR CODE HERE
 
  if (b==0)
-{
+  {
  cout<<"Impossible" << endl;
-}
-else
-{
+  }
+  else
+  {
   cout<<a/b<<endl;
-}
+  }
 }
 
 void exercise_4(double n, double a, double b, double x, double y) {
   // TODO: YOUR CODE HERE
-if(n>b)
+  if(n>b)
   {
     cout<<n-1*(n*(y/100))<<endl;
   }
-else if (n>a)
+  else if (n>a)
   {
     cout<<n-1*(n*(x/100))<<endl;
   }
-else
+  else
   {
     cout<<n<<endl;
   }
@@ -82,18 +82,6 @@ else
 
 void exercise_5(char character) {
   // TODO: YOUR CODE HERE
-  if (character>='a' && character<='z')
-  {
-    cout<<"lower-case alphabet"<<endl;
-  }
-  else if (character>='A' && character<='Z')
-  {
-    cout<<"upper-case alphabet"<<endl;
-  }
-  else
-  {
-    cout<<"not an alphabet"<<endl;
-  }
 }
 
 void exercise_6(int number) {
@@ -148,11 +136,11 @@ string exercise_11(int number) {
     cin>> number;
     if (number==11235813)
     {
-      cout<<"Se encontro Fibonacci";
+      cout<<"\"Se encontro Fibonacci\"";
     }
     else
     { 
-      cout<<"Esto no es de Fibonacci";
+      cout<<"\"Esto no es de Fibonacci\"";
     } 
 
     return "";
@@ -190,23 +178,15 @@ string exercise_13(int age, int years_of_experience) {
 
 string exercise_14(int number_of_docs) {
   // TODO: YOUR CODE HERE
-  if(number_of_docs>=2)
-  {
-    cout<<number_of_docs<<" documentos encontrados.";
-  }
-  else if (number_of_docs==1)
-  {
-    cout<<"Se encontro un documento";
-  }
-  else
-  {
-    cout<<"No se encontraron documentos";
-  }
+
   return "";
 }
 
 void exercise_15(int a, int b, int c) {
   // TODO: YOUR CODE HERE
+  cout<<"Los valores son: a = "<<a<<" b = "<<b<<" y c ="<<c<<endl;
+  cout<<"Permutamos: a => b, b => c, c => a"<<endl;
+  cout<<"Los valores despues de la permutacion son: a = "<<c<<" b = "<<a<<" c = "<<b<<endl;
 }
 
 void exercise_16(int debut, int fin) {
