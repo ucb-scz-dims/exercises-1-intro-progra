@@ -5,40 +5,39 @@
 using namespace std;
 
 void exercise_1(string s1, string s2, string s3) {
-  // TODO: YOUR CODE HERE
-  cout << "a" << endl;
+   string ming;
+   mins = s1;
+   if (mains > s2) {
+    mins = s2;
+   }
+   if(mins > s3) {
+    mins = s3;
+   }
+   cout<<muns;
 }
 
 void exercise_2(double A, double B, double C) {
-  // TODO: YOUR CODE HERE
 }
 
 void exercise_3(int a, int b) {
-  // TODO: YOUR CODE HERE
 }
 
 void exercise_4(double n, double a, double b, double x, double y) {
-  // TODO: YOUR CODE HERE
 }
 
 void exercise_5(char character) {
-  // TODO: YOUR CODE HERE
 }
 
 void exercise_6(int number) {
-  // TODO: YOUR CODE HERE
 }
 
 void exercise_7(double r) {
-  // TODO: YOUR CODE HERE
 }
 
 void exercise_8(long int seconds) {
-  // TODO: YOUR CODE HERE
 }
 
 string exercise_9(string s1, string s2, string s3, string s4, string s5) {
-  // TODO: YOUR CODE HERE
   return "";
 }
 
